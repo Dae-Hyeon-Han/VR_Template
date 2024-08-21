@@ -186,6 +186,8 @@ public class ChapterManager : MonoBehaviour
     {
         bool enableFadeOutIn;
 
+        Debug.Log($"{activity.ID}");
+
         //if (ViveChanger.Instance.isVive)
         //{
         //    enableFadeOutIn = activity.PlayerLocationID != VivePlayerManager.Instance.CurrentLocationID || CurrentActivity?.Chapter != activity?.Chapter;
