@@ -218,7 +218,7 @@ public class ChapterManager : MonoBehaviour
         ConditionManager.Instance.Clear();
         //MediaPlayer.Instance.Stop();
         SoundManager.Instance.Stop();
-        AnimationManager.Instance.Stop();
+        //AnimationManager.Instance.Stop();
         PopupManager.Instance.Hide();
         ActivityManager.Instance?.Select(null);
 
@@ -269,7 +269,7 @@ public class ChapterManager : MonoBehaviour
             default:
                 StartCoroutine(PopupManager.Instance.Show(activity));
                 StartCoroutine(SoundManager.Instance.Play(activity));
-                StartCoroutine(AnimationManager.Instance.Play(activity));
+                //StartCoroutine(AnimationManager.Instance.Play(activity));
                 break;
         }
 

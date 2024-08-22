@@ -64,7 +64,7 @@ public class TargetObject : MonoBehaviour
 
         if(Touches == null || Touches.Length == 0)
         {
-            Touches = new Touch[] { new Touch { Collider = "Ray", SetConditionID = name} };
+            Touches = new Touch[] { new Touch { Collider = "Ray", SetConditionID = name} };         // ConditionsIDs를 오브젝트 네임으로 지정하고, 컴포넌트 상에서 별다른 조치를 취해보지 말 것.
         }
 
         if (UseHighlight && _highlightEffect == null)
