@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97312a4c158244048918f83dac9151bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  items: []
 --- !u!4 &115641458
 Transform:
   m_ObjectHideFlags: 0
@@ -490,6 +491,7 @@ GameObject:
   - component: {fileID: 755222617}
   - component: {fileID: 755222618}
   - component: {fileID: 755222619}
+  - component: {fileID: 755222620}
   m_Layer: 0
   m_Name: U_006
   m_TagString: Untagged
@@ -526,7 +528,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj: {fileID: 0}
   pos: {x: 0, y: 0, z: 0}
-  timer: 0
+  rot: {x: 0, y: 0, z: 0}
+  ease: 0
+  startTimer: 0
+  duration: 10
 --- !u!114 &755222619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,7 +546,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj: {fileID: 0}
   pos: {x: 0, y: 0, z: 0}
-  timer: 0
+  rot: {x: 0, y: 0, z: 0}
+  ease: 0
+  startTimer: 0
+  duration: 5
+--- !u!114 &755222620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755222616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb39eea240605e04a9f7e47d1db1eb59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 0}
+  pos: {x: 0, y: 0, z: 0}
+  rot: {x: 0, y: 0, z: 0}
+  ease: 0
+  startTimer: 0
+  duration: 1
 --- !u!1 &771519403
 GameObject:
   m_ObjectHideFlags: 0

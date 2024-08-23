@@ -15,6 +15,6 @@ public class AnimItem : MonoBehaviour
     public Vector3 pos;
     public Vector3 rot;
     public Ease ease;
-    public float startTimer;
-    public float endTimer;
+    public float delayTime;
+    public float duration;
 }

@@ -456,6 +456,7 @@ MonoBehaviour:
   posi: {x: 5, y: -5, z: 5}
   rota: {x: 0, y: 180, z: 0}
   ease: 0
+  delay: 2
 --- !u!4 &718820005
 Transform:
   m_ObjectHideFlags: 0
