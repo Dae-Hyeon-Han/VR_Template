@@ -453,10 +453,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gObj: {fileID: 1843812983}
-  posi: {x: 5, y: -5, z: 5}
-  rota: {x: 0, y: 180, z: 0}
+  posi: {x: 0, y: 0, z: 0}
+  rota: {x: 0, y: 360, z: 0}
   ease: 0
-  delay: 2
+  delay: 0.5
 --- !u!4 &718820005
 Transform:
   m_ObjectHideFlags: 0
