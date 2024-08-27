@@ -1,10 +1,16 @@
 fileFormatVersion: 2
 guid: 888380afc233049ce9e618f9f36c8ba8
-timeCreated: 1545593776
-licenseType: Pro
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - profile: {fileID: 11400000, guid: e6e74f38237364260b68bef0cd1b8795, type: 2}
+  - overlayTexture: {instanceID: 0}
+  - targetFXTexture: {instanceID: 0}
+  - targetFXCenter: {instanceID: 0}
+  - seeThroughTexture: {instanceID: 0}
+  - target: {instanceID: 0}
+  - previousSettings: {instanceID: 0}
   executionOrder: 900
   icon: {instanceID: 0}
   userData: 
