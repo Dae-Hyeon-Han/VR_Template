@@ -93,6 +93,8 @@ public class PlayerManager : MonoBehaviour
 
     public void MoveToLocation(string locationID)
     {
+        Debug.Log("로케이션");
+
         if (string.IsNullOrEmpty(locationID))
             return;
 

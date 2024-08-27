@@ -186,7 +186,7 @@ public class ChapterManager : MonoBehaviour
     {
         bool enableFadeOutIn;
 
-        Debug.Log($"{activity.ID}");
+        //Debug.Log($"{activity.ID}");
 
         //if (ViveChanger.Instance.isVive)
         //{
@@ -226,6 +226,7 @@ public class ChapterManager : MonoBehaviour
 
         // init
         StageManager.Instance.MoveToStage(activity.StageID);
+        //PlayerManager.Instance.MoveToLocation(activity.PlayerLocationID);
         #region
         //if(ViveChanger.Instance.isVive)
         //{
@@ -305,7 +306,7 @@ public class ChapterManager : MonoBehaviour
         }
 
         var groupCondition = new GroupCondition(conditions);
-        Debug.Log($"Wait For Conditions : {activity.ConditionIDs}");
+        //Debug.Log($"Wait For Conditions : {activity.ConditionIDs}");
 
         bool retryWait;
         do
@@ -393,7 +394,7 @@ public class ChapterManager : MonoBehaviour
     {
         foreach (var targetObject in StageManager.Instance.FindTargetObjects(targetObjects))
         {
-            Debug.Log($"Enable TargetObject : {targetObject.name}");
+            //Debug.Log($"Enable TargetObject : {targetObject.name}");
 
             StartCoroutine(targetObject.SetEnable(true));
             _targetObjects.Add(targetObject);

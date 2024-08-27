@@ -31,7 +31,7 @@ public class ActivityManager : MonoBehaviour
             _activity[child.name] = child.gameObject;
         }
         
-        Debug.Log("StepManager Initialized");
+        //Debug.Log("StepManager Initialized");
     }
 
     public void Select(string activityID)

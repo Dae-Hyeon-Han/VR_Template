@@ -10,7 +10,7 @@ using Scenario;
 public class Touch
 {
     public string Collider = "Ray";
-    public string ActivityID;
+    //public string ActivityID;
     public string SetConditionID;
     //public CustomDOTweenAnimation[] Dotweens;
 }
@@ -64,7 +64,8 @@ public class TargetObject : MonoBehaviour
 
         if(Touches == null || Touches.Length == 0)
         {
-            Touches = new Touch[] { new Touch { Collider = "Ray", SetConditionID = name} };         // ConditionsIDs를 오브젝트 네임으로 지정하고, 컴포넌트 상에서 별다른 조치를 취해보지 말 것.
+            //Touches = new Touch[] { new Touch { Collider = "Ray", SetConditionID = name} };         // ConditionsIDs를 오브젝트 네임으로 지정하고, 컴포넌트 상에서 별다른 조치를 취해보지 말 것.
+            Touches = new Touch[] { new Touch { Collider = "DefaultHand", SetConditionID = name + "_Touch" } };         // ConditionsIDs를 오브젝트 네임으로 지정하고, 컴포넌트 상에서 별다른 조치를 취해보지 말 것.
         }
 
         if (UseHighlight && _highlightEffect == null)
@@ -72,6 +73,7 @@ public class TargetObject : MonoBehaviour
             _highlightEffect = gameObject.AddComponent<HighlightEffect>();
             _highlightEffect.ProfileLoad(_highlightSetting);
             _highlightEffect.ignoreObjectVisibility = true;
+            _highlightEffect.outlineColor = new Color32(255,160,160,255);
             _highlightEffect.highlighted = false;
         }
 
@@ -220,8 +222,8 @@ public class TargetObject : MonoBehaviour
     {
         _currentActivity = ChapterManager.Instance.CurrentActivity;
 
-        var touch = Touches.FirstOrDefault(o => o.ActivityID == _currentActivity.ID);
-        // var touch = Touches.FirstOrDefault(o => o.Collider == colliderName);
+        //var touch = Touches.FirstOrDefault(o => o.ActivityID == _currentActivity.ID);
+         var touch = Touches.FirstOrDefault(o => o.Collider == colliderName);
         
         if (touch == null)
             return;
@@ -235,7 +237,11 @@ public class TargetObject : MonoBehaviour
 
         _setConditionID = touch.SetConditionID;
 
-        SoundManager.Instance.CorrectPlayer.Play();
+
+        Debug.Log($"ㅇㅇㅇ{_setConditionID}");
+        ConditionManager.Instance.SetCondition(_setConditionID);
+
+        //SoundManager.Instance.CorrectPlayer.Play();
 
         //if (touch.Dotweens.Length == 0)
         //{
@@ -247,7 +253,7 @@ public class TargetObject : MonoBehaviour
         //    //}
         //    return;
         //}
-       
+
         //foreach (var dotween in touch.Dotweens)
         //{
         //    if (dotween != null)
@@ -264,6 +270,7 @@ public class TargetObject : MonoBehaviour
         //    Touches = Touches.Skip(1).ToArray();
         //}
         Debug.Log($"{GetType()} - Last  _currentActivity.ID : {_currentActivity.ID}");
+
     }
 
     public void FinishActivity(bool isFinish)
