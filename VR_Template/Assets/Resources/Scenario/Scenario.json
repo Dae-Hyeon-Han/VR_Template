@@ -406,7 +406,7 @@
                   "AnimationID": null,
                   "AnimationDelay": 0,
                   "Data": null,
-                  "PresetConditionIDs": null,
+                  "PresetConditionIDs": "CableActive",
                   "ConditionIDs": "USB_cable_Touch"
                 },
                 {
