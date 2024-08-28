@@ -248,7 +248,7 @@ public class ChapterManager : MonoBehaviour
         PlayerManager.Instance.SetControllerSettings(activity.Settings);
         PlayerManager.Instance.SetLeftTool(activity);
         PlayerManager.Instance.SetRightTool(activity.RightHandToolID);
-
+        //AnimationManager.Instance?.PlayAnimation(activity.AnimationID);
         ActivityManager.Instance?.Select(activity.ID);
 
         EnableTargetObjects(activity.TargetObject);

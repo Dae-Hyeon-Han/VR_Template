@@ -238,7 +238,8 @@ public class TargetObject : MonoBehaviour
         _setConditionID = touch.SetConditionID;
 
 
-        Debug.Log($"ㅇㅇㅇ{_setConditionID}");
+        //Debug.Log($"ㅇㅇㅇ{_currentActivity.ID}");
+        AnimationManager.Instance.PlayAnimation(_currentActivity.ID);
         ConditionManager.Instance.SetCondition(_setConditionID);
 
         //SoundManager.Instance.CorrectPlayer.Play();

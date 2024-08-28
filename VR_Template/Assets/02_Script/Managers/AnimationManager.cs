@@ -38,6 +38,9 @@ public class AnimationManager : MonoBehaviour
 
     public void PlayAnimation(string AnimationID)
     {
+        if (string.IsNullOrEmpty(AnimationID))
+            return;
+
         if (animDictionary.ContainsKey(AnimationID))
         {
             // 오브젝트가 여러개의 컴포넌트를 갖고 있을 수 있으므로. 하나의 배열로 저장
