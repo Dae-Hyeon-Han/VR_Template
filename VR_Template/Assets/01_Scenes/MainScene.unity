@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 17372111}
   - component: {fileID: 17372112}
   m_Layer: 0
-  m_Name: DEBUG_001
+  m_Name: DEBUG001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -542,7 +542,7 @@ GameObject:
   - component: {fileID: 755222617}
   - component: {fileID: 755222618}
   m_Layer: 0
-  m_Name: U_006
+  m_Name: U006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
